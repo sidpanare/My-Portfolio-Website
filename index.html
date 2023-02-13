@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa1a496bf1.js" crossorigin="anonymous"></script>
+    <link href="images/bootstrap-icons.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.jpg" class="logo"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Siddhant</span> Panare <br>From IXG, India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about_me.jpg"> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Siddhant Panare, I love Travelling, Listening to Music, DJing. I also have a keen intrest in playing Table Tennis since childhood.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Designing Web Pages</li>
+                            <li><span>C and C++ Programming</span><br>Solving complex problems</li>
+                            <li><span>Java Programming</span><br>Object oriented Programming</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023</span><br>Data Analytics Course</li>
+                            <li><span>2022</span><br>Internship based on Software Tools and Technologies</li>
+                            <li><span>2021</span><br>Innovation and Startup Course</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Computer Science and Engineering at KLS GIT Belgaum</li>
+                            <li><span>2019-2021</span><br>Pre University College at RLS Belgaum</li>
+                            <li><span>2009-2019</span><br>Schooling at St. Mary's High School Belgaum</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo itaque, quis, sed nesciunt quae aperiam porro vitae illo veritatis laboriosam eius deleniti natus cupiditate soluta. Quam recusandae hic quae ipsa.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>C and C++</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo itaque, quis, sed nesciunt quae aperiam porro vitae illo veritatis laboriosam eius deleniti natus cupiditate soluta. Quam recusandae hic quae ipsa.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo itaque, quis, sed nesciunt quae aperiam porro vitae illo veritatis laboriosam eius deleniti natus cupiditate soluta. Quam recusandae hic quae ipsa.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Experience</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/images.jpg">
+                    <div class="layer">
+                        <h3>Table Tennis</h3>
+                        <p>I've been playing Table Tennis since 3rd Grade. I've attended SGFI Nationals Twice
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/download.jpg">
+                    <div class="layer">
+                        <h3>Travelling</h3>
+                        <p>I love exploring new places, culture, new cuisines 
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/djing.jpg">
+                    <div class="layer">
+                        <h3>DJing</h3>
+                        <p>I've done DJing at some House Parties
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!--Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>siddhantpanare@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+918217837741</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                      <a href="images/SIDDHANT PANARE.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }        
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+ 
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzW7aiy-UTZNMnSxYNgJ1MbS5Hu-Q5Py6mnfxFz0v3kbtlsMRSjZaDZfHsTdyDwGSyF/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
